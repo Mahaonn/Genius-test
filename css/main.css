@@ -82,11 +82,14 @@ address {
   overflow: hidden;
 }
 
-/* classes */
+.section {
+  padding: 48px 0;
+}
+
 .container {
-  margin: 0 auto;
   width: 100%;
-  max-width: 1264px;
+  max-width: 1288px;
+  margin: 0 auto;
   padding: 0 24px;
 }
 
@@ -105,18 +108,15 @@ address {
   color: var(--color-brand-dark);
 }
 
-.section {
-  padding: 48px 0;
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-.section-title {
-  font-size: 64px;
-  font-weight: 790;
-  line-height: 1.3;
-}
-
-.section-title.centered {
-  text-align: center;
+.link:hover {
+  color: var(--color-brand-normal);
 }
 
 /* Header */
@@ -127,7 +127,8 @@ address {
   width: 100%;
   padding-top: 32px;
 }
-.header .header-container {
+
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +164,6 @@ address {
           justify-content: center;
 }
 
-/* Hero section */
 .hero-section {
   padding: 272px 0;
   background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero-backgroumd.png");
@@ -173,39 +173,29 @@ address {
 }
 
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
-  margin-bottom: 0;
 }
 
 .hero-title .accent {
   color: var(--color-brand-normal);
 }
 
+.section-title {
+  font-size: 64px;
+  font-weight: 790;
+  line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+/* Hero section */
 /* Advantages section */
-.advantages-section {
-  background-color: var(--color-brand-normal);
-  padding: 16px 0;
-}
-
-.advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
-}
-
-.advantages-item {
-  color: var(--color-primary-light);
-  font-size: 20px;
-  font-weight: 300;
-}
-
 .section-title .accent {
   color: var(--color-brand-dark);
 }
