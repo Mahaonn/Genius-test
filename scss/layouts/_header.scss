@@ -39,5 +39,22 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    @media screen and (max-width: $bg-desktop) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: $bg-desktop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $bg-desktop) {
+      display: block;
+    }
   }
 }
