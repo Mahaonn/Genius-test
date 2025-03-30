@@ -29,32 +29,38 @@
   }
 
   &__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 64px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    display: none;
 
-    @media screen and (max-width: $bg-desktop) {
-      display: none;
+    @media screen and (min-width: $bg-desktop) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 64px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
     }
   }
 
   &__button {
-    @media screen and (max-width: $bg-desktop) {
-      display: none;
+    display: none;
+
+    @media screen and (min-width: $bg-desktop) {
+      display: block;
     }
   }
 
   &__burger {
-    display: none;
-    @media screen and (max-width: $bg-desktop) {
-      display: block;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+    padding: 0;
+
+    @media screen and (min-width: $bg-desktop) {
+      display: none;
     }
   }
 }
